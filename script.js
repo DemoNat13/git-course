@@ -6,8 +6,5 @@ hello.onclick = function() {
 }
 
 function isPalindrome(word) {
-  return (word.toLowerCase() === word.toLowerCase()
-    .split('')
-    .reverse()
-    .join('')) ? alert(true) : alert(false);
+  return word === word.split('').reverse().join('');
 }
