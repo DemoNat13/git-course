@@ -5,4 +5,9 @@ hello.onclick = function() {
   alert("Go fuck yourself");
 }
 
-
+function isPalindrome(word) {
+  return (word.toLowerCase() === word.toLowerCase()
+    .split('')
+    .reverse()
+    .join('')) ? alert(true) : alert(false);
+}
